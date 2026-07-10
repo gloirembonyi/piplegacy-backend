@@ -1,0 +1,48 @@
+{
+  "name": "piplegacy-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Standalone API backend for Piplegacy — powers the web app and the piplegacy-desktop client.",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start",
+    "setup:auth-env": "node scripts/setup-auth-env.mjs",
+    "seed:super-admin": "node scripts/seed-super-admin.mjs",
+    "tv-mcp:install": "node scripts/install-tradingview-mcp.mjs",
+    "tv-mcp:bridge": "node scripts/tradingview-mcp-bridge.mjs",
+    "python-agent:install": "node scripts/install-python-agent.mjs",
+    "python-agent:start": "node scripts/python-agent-server.mjs",
+    "dev:clean": "node scripts/dev-clean.mjs",
+    "probe:agents": "npx tsx scripts/probe-agent-health.ts",
+    "probe:keys": "npx tsx scripts/probe-ai-keys.mjs",
+    "convex:dev": "convex dev",
+    "convex:deploy": "convex deploy"
+  },
+  "dependencies": {
+    "@alpacahq/alpaca-trade-api": "^3.1.3",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@neondatabase/serverless": "^1.1.0",
+    "@stripe/stripe-js": "^8.11.0",
+    "@upstash/redis": "^1.38.0",
+    "convex": "^1.41.0",
+    "finnhub": "^2.0.11",
+    "lucide-react": "^1.24.0",
+    "next": "^16.2.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "stripe": "^19.1.0",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-react": "^5.17.14",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-react": "^4.18.3",
+    "typescript": "^5"
+  }
+}

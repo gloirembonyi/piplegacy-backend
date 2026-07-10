@@ -1,0 +1,25 @@
+{
+  "crons": [],
+  "functions": {
+    "app/api/market-chat/route.ts": {
+      "maxDuration": 120
+    },
+    "app/api/cron/scan/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/cron/trade-watch/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/cron/trigger-pending/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/bot/scan/route.ts": {
+      "maxDuration": 60
+    },
+    "api/python-agent/**/*.py": {
+      "maxDuration": 120,
+      "memory": 1024,
+      "includeFiles": "python/agent_engine/**"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+# Vercel Python serverless functions (api/python-agent/*)
+numpy>=2.0.0
+pandas>=2.0.0
+yfinance>=0.2.50
